@@ -16,3 +16,5 @@ class Todo(models.Model):
 
     def __str__(self):
         return self.title
+    
+# pip install django djangorestframework djangorestframework-simplejwt django-cors-headers

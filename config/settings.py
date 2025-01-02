@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-0(-yd9evje7&4om&akh6%89#mjvgr7n2y_=e5g)hxs(h!t=@0i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -71,10 +71,10 @@ SIMPLE_JWT = {
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
 }
 
+ROOT_URLCONF = 'config.urls'
+
 # CORS 설정
 CORS_ALLOW_ALL_ORIGINS = True  # 개발환경에서만 사용
-
-ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
     {
