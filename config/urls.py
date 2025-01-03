@@ -25,3 +25,6 @@ urlpatterns = [
     path('api/token/',TokenObtainPairView.as_view()),
     path('api/token/refresh/',TokenRefreshView.as_view()),
 ]
+
+
+# 10시 50분까지 여러분들의 코드를 완성해 보겠습니다!!
