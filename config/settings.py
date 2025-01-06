@@ -77,6 +77,12 @@ ROOT_URLCONF = 'config.urls'
 # CORS 설정
 CORS_ALLOW_ALL_ORIGINS = True  # 개발환경에서만 사용
 
+# 실제 배포시
+# CORS_ALLOWED_ORIGINS = [
+#     "<http://127.0.0.1:5500>",  # VS Code Live Server 기본 포트
+#     "<http://localhost:5500>",
+# ]
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
