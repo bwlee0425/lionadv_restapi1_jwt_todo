@@ -1,7 +1,11 @@
 # todos/models.py
 from django.db import models
 from django.conf import settings
+<<<<<<< HEAD
 from django.contrib.auth.models import User
+=======
+
+>>>>>>> fcba87d9aba674431dd54ea4b932190fa2b6c000
 class Todo(models.Model):
     title = models.CharField(max_length=200)
     content = models.TextField(blank=True)

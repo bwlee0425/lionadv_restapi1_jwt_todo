@@ -29,3 +29,11 @@ class TodoSerializer(serializers.ModelSerializer):
         validated_data['user'] = self.context['request'].user
         # Todo.objects.create(......) -> super.create
         return super().create(validated_data)
+<<<<<<< HEAD
+=======
+    
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['id', 'username']
+>>>>>>> fcba87d9aba674431dd54ea4b932190fa2b6c000
